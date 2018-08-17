@@ -1,3 +1,5 @@
+let {log,imageFromPath,isPageHidden,allImg} = require('./common.js');
+
 /* by：弦云孤赫——David Yang
 ** github - https://github.com/yangyunhe369
 */
@@ -267,3 +269,5 @@ class Game {
     g.setTimer(paddle, ball, blockList, score)
   }
 }
+
+module.exports = Game;

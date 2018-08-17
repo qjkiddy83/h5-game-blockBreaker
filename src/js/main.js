@@ -1,3 +1,6 @@
+let {Scene,Paddle,Ball,Block,Score} = require('./scene.js');
+let Game = require('./game.js');
+
 /* by：弦云孤赫——David Yang
 ** github - https://github.com/yangyunhe369
 */

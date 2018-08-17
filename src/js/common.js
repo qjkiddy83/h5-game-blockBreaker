@@ -11,10 +11,10 @@ const imageFromPath = function (src) {
 }
 // 检测页面不可见时自动暂停游戏方法
 const isPageHidden = function (game) {
-  let hiddenProperty = 'hidden' in document ? 'hidden' :    
-      'webkitHidden' in document ? 'webkitHidden' :    
-      'mozHidden' in document ? 'mozHidden' :    
-      null
+  let hiddenProperty = 'hidden' in document ? 'hidden' :
+    'webkitHidden' in document ? 'webkitHidden' :
+      'mozHidden' in document ? 'mozHidden' :
+        null
   let visibilityChangeEvent = hiddenProperty.replace(/hidden/i, 'visibilitychange')
   // 监听页面是否可见事件
   document.addEventListener(visibilityChangeEvent, function () {
@@ -34,4 +34,8 @@ const allImg = {
   ball: 'ball.png',
   block1: 'block001.png',
   block2: 'block002.png',
+}
+
+module.exports = {
+  log, imageFromPath, isPageHidden, allImg
 }
